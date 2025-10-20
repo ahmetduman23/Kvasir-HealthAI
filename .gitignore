@@ -1,0 +1,73 @@
+# --- Python cache / build ---
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.log
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*.ipynb_save
+*.nbconvert.ipynb
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+
+# --- OS Files ---
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+# --- Virtual Environments ---
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+*.env
+
+# --- Project Artifacts ---
+assets/results/
+assets/cache_preproc/
+assets/xai_visualizations/
+checkpoints/
+checkpoints_*/
+runs/
+logs/
+wandb/
+*.pt
+*.pth
+
+# --- Temporary data ---
+*.tmp
+*.bak
+*.npy
+*.npz
+*.pkl
+*.csv~
+*.json~
+
+# --- Dataset paths (optional local data) ---
+Kvasir-SEG/
+datasets/
+data/
+tmp_data/
+
+# --- Reports / Figures (optional) ---
+outputs/
+plots/
+figures/
+
+# --- OS-independent ignore for Colab mounts ---
+/content/
+drive/
