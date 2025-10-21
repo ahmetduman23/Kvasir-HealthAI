@@ -164,6 +164,7 @@ Computer Engineer — *Healthcare AI & Computer Vision*
 🔗 [LinkedIn](https://www.linkedin.com/in/ahmetyasirduman) • [GitHub](https://github.com/ahmetduman23)
 
 ---
+https://github.com/ahmetduman23/Kvasir-HealthAI
 
 ## 🩶 Citation
 
