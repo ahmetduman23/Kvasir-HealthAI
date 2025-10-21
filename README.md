@@ -48,7 +48,7 @@ Each input frame passes through:
 ## 🧠 Training Setup
 ```bash
 python -m src.training.train
-
+```
 **Default Hyperparameters**
 
 | Parameter | Value |
