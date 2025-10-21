@@ -1,23 +1,12 @@
 # 🩺 Kvasir-HealthAI: Advanced U-Net Pipeline for Gastrointestinal Polyp Segmentation
 
-![Kvasir-HealthAI Banner](assets/docs/banner_kvasir_healthai.png)
+![Kvasir-HealthAI Banner](sample/banner.png)
 
 ---
 
 ## 📘 Overview
 **Kvasir-HealthAI** is an end-to-end deep learning pipeline for **gastrointestinal polyp segmentation** using the [Kvasir-SEG dataset](https://datasets.simula.no/kvasir-seg/).  
 It features a modular design with preprocessing, training, and explainability stages — enabling reproducible, high-performance medical segmentation.
-
----
-
-## 🧩 Architecture
-![U-Net Architecture](assets/docs/unet_architecture.png)
-
-The core model is a **U-Net** with encoder–decoder symmetry, skip connections, and batch normalization at each stage.  
-Implemented in pure PyTorch with support for:
-- Adjustable base filters (`base=32` / `64`)
-- Dice + BCE composite loss
-- Early stopping, mixed precision, and auto-resume training
 
 ---
 
@@ -36,7 +25,7 @@ Each input frame passes through:
 ### Example
 | Original | After Preprocessing |
 |-----------|--------------------|
-| ![](assets/docs/sample_original.png) | ![](assets/docs/sample_preprocessed.png) |
+| ![](sample/preprocess_before.png) | ![](sample/preprocess_after.png) |
 
 **Effect on training**
 - Higher Dice & IoU  
@@ -82,7 +71,7 @@ python -m src.training.train
 
 | Loss Curves | Metrics (Dice / IoU) |
 |--------------|----------------------|
-| ![](assets/results/unet/loss_curves.png) | ![](assets/results/unet/metric_curves.png) |
+| ![](sample/loss_curves.png) | ![](sample/metrics_curves.png) |
 
 ---
 
@@ -93,9 +82,9 @@ It highlights the areas contributing most to the final prediction, enabling inte
 
 ### Visualization Example
 
-| Input | Prediction | Grad-CAM | Overlay |
-|--------|-------------|-----------|----------|
-| ![](assets/xai_visualizations/val_cam_00.png) | ![](assets/xai_visualizations/val_cam_01.png) | ![](assets/xai_visualizations/val_cam_02.png) | ![](assets/xai_visualizations/val_cam_03.png) |
+| Input | Grad-CAM | Overlay |
+|--------|-----------|----------|
+| ![](sample/xai_input.png) | ![](sample/xai_gradcam.png) | ![](sample/overlay.png) |
 
 ---
 
