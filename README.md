@@ -84,7 +84,7 @@ It highlights the areas contributing most to the final prediction, enabling inte
 
 | Input | Grad-CAM | Overlay |
 |--------|-----------|----------|
-| ![](sample/xai_input.png) | ![](sample/xai_gradcam.png) | ![](sample/overlay.png) |
+| ![](sample/xai_input.png) | ![](sample/xai_gradcam.png) | ![](sample/xai_overlay.png) |
 
 ---
 
