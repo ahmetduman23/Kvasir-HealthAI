@@ -144,6 +144,7 @@ x = torch.from_numpy(img.transpose(2,0,1)).unsqueeze(0).float()/255.
 with torch.no_grad():
     mask = torch.sigmoid(model(x))[0,0].numpy()
 
+```
 
 ## 🧭 Roadmap
 
