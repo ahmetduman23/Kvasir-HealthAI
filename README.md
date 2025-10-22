@@ -90,6 +90,7 @@ It highlights the areas contributing most to the final prediction, enabling inte
 
 ## 🧰 Folder Structure
 
+```bash
 Kvasir-HealthAI/
 │
 ├── src/
@@ -113,6 +114,7 @@ Kvasir-HealthAI/
 ├── setup.py
 ├── requirements.txt
 └── LICENSE
+```
 
 
 ---
